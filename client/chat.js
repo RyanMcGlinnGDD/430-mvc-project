@@ -43,7 +43,12 @@ const setupSocket = () => {
   
   socket.on('serveMessage', (data) => {
     chatMessageSection.innerHTML += `<div class="chatMessage"><div class="chatMessageName"><p>${data.nickname}</p></div><div class="chatMessageText"><p>${data.message}</p></div></div>`;
+    scrollDown();
   });
+}
+
+const scrollDown = () => {
+  chatMessageSection.scrollTop = chatMessageSection.scrollHeight;
 }
 
 $(document).ready(function() {
