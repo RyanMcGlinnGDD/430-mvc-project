@@ -15,7 +15,7 @@ const websocketServer = require('./server');
 
 // use require to pull in a websocket server script
 
-const dbURL = process.env.MONGODB_URI || 'mongodb://heroku_q3nx9cvs:5uhbvnje55lfm33rvi7le0i7gl@ds051953.mlab.com:51953/heroku_q3nx9cvs';
+const dbURL = process.env.MONGODB_URI || 'mongodb://heroku_48prxfdc:nruq5ep5ep7dghuvshei1db12u@ds031117.mlab.com:31117/heroku_48prxfdc';
 
 mongoose.connect(dbURL, (err) => {
   if (err) {
