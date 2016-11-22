@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Metrochat</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="/assets/img/favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="/assets/style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/assets/chat.js" type="text/babel"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+  <input id="nickname" type="hidden" value={{screenname}} />
+  <input id="username" type="hidden" value={{username}} />
+  <nav><a href="/login"><img id="logo" src="/assets/img/face.png" alt="face logo"/></a>
+    <div class="navlink"><a href="/maker">Profile</a></div>
+    <div class="navlink navlinkRight"><a href="/logout">Log out</a></div>
+  </nav>
+  
+  <div id="chatSection">
+    <div id="chatMessageSection"></div>
+    <div>
+      <input id="chatText" />
+      <button id="chatButton">Send</button>
+    </div>
+  </div>
+</body>
+</html>

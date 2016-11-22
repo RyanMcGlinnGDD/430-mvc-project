@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Metrochat</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="/assets/img/favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="/assets/style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+  <nav><a href="/login"><img id="logo" src="/assets/img/face.png" alt="face logo"/></a>
+    <div class="navlink"><a href="/chat">Chat</a></div>
+    <div class="navlink navlinkright"><a href="/logout">Log out</a></div>
+  </nav>
+  <h1 id="profileHeader">Hello {{screenname}}! Welcome to Metrochat!</h1>
+  <section id="makeDomo">
+    <form id="domoForm" name="domoForm" action="/maker" method="POST" class="domoForm">
+      <label for="newNickname">New Nickname: </label>
+      <input id="newNickname" type="text" name="newNickname" placeholder="New Nickname"/>
+      <input type="hidden" name="_csrf" value={{csrfToken}} />
+      <a id="makeDomoSubmit" href="#" class="makeDomoSubmit">Change</a>
+    </form>
+  </section>
+  <div id="domoMessage"><img id="speech" src="/assets/img/speech.png" alt="speech box"/>
+    <h3><span id="errorMessage"></span></h3><img id="domo" src="assets/img/domo.png" alt="domo"/>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+  <script src="/assets/maker.js" type="text/babel"></script>
+</body>
+</html>

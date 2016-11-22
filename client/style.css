@@ -1,0 +1,259 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: dimgray;
+  font-family: 'Lato', sans-serif;
+}
+
+#logo {
+    height: 40px;
+    width: 40;
+    padding-top: 5px;
+    float:left;
+    border-radius: 8px;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #404040;
+}
+
+nav:nth-child(1) {
+    padding-left: 25px;
+}
+
+.navlink {
+    padding: 5px;
+    padding-top: 12px;
+    padding-left: 20px;
+    color: white;
+    font-size: 1.3em;
+    float: left;
+}
+.navlinkRight {
+    float: right;
+}
+
+.navlink a, .navlink a:link, .navlink a:visited, .navlink a:hover, .navlink a:active {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #404040;
+    transition: background-color 0.4s ease;
+}
+
+.navlink a:hover {
+    transition: background-color 0.8s ease;
+    background-color: #808080;
+}
+
+.domoForm {
+    border: 2px solid #202020;
+    height: 35px;
+    width: 700px;
+  margin: 0 auto;
+    margin-top:0px;
+    padding-top:10px;
+    background-color: #404040;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#profileHeader {
+  text-align: center;
+  color: white;
+}
+
+.domoForm label {
+    display: inline-block;
+    width: 150px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    float: left;
+    color: white;
+}
+
+.domoForm input[type=text] {
+    float:left;
+}
+
+.makeDomoSubmit {
+    transition: background-color 0.4s ease;
+    display: inline;
+    margin-top: 14px;
+    font-size: 1.2em;
+    width: 90px;
+    background-color: #404040;
+    border-radius: 2px;
+    padding: 3px 0px;
+    color: black;
+    text-decoration: none;
+    margin-left: 45px;
+    padding: 5px;
+}
+
+.makeDomoSubmit:link, .makeDomoSubmit:visited, .makeDomoSubmit:hover, .makeDomoSubmit:active {
+    color: white;
+}
+
+.makeDomoSubmit:hover {
+    transition: background-color 0.4s ease;
+    background-color: #808080;
+}
+
+.mainForm {
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 350px;
+    font-size: 1.2em;
+}
+
+.mainForm h3 {
+    text-align: center;
+}
+
+.mainForm label {
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.formSubmit {
+    transition: background-color 0.4s ease;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 14px;
+    font-size: 1.2em;
+    width: 90px;
+    background-color: #404040;
+    border-radius: 2px;
+    padding: 3px 0px;
+    color: black;
+    text-decoration: none;
+}
+
+.formSubmit:link, .formSubmit:visited, .formSubmit:hover, .formSubmit:active {
+    color: white;
+}
+
+.formSubmit:hover {
+    transition: background-color 0.4s ease;
+    background-color: #808080;
+}
+
+#user, #pass, #pass2, #screenname {
+    text-align: center;
+    font-size: 1.1em;
+    width: 180px;
+    border-radius: 6px;
+}
+
+#user:focus, #pass:focus, #pass2:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px #404040;
+}
+
+#domoMessage {
+    display:none;
+    top: 250px;
+    width: 250px;
+    height: 650px;
+    position: absolute;
+    z-index: 200;
+    right: 0px;
+    overflow: hidden;
+}
+
+#domoMessage h3 {
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+#speech {
+    height: 120px;
+    width: 250px;
+    z-index:300;
+}
+
+#errorMessage {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: red;
+    font-style: italic;
+}
+
+h3.newNickname {
+    float:left;
+    width: 300px;
+    font-weight: bold;
+    padding-left: 65px;
+    font-size: 1.5em;
+}
+
+.notFound{
+  text-align: center;
+  margin: 0 auto;
+}
+
+#chatSection {
+  margin: 0 auto;
+  background-color: gray;
+  width: 80%;
+  height: 90vh;
+}
+#chatMessageSection {
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+#chatText {
+  float: left;
+  width: 75%;
+  height: 10%;
+  resize: none;
+  font-size: 1.3em;
+}
+
+#chatButton {
+  border:none;
+  float: right;
+  width: 25%;
+  height: 10%;
+  color: white;
+  font-size: 1.3em;
+  background-color: #404040;
+}
+
+.chatMessage {
+  width: 99%;
+  margin-left: .5%;
+  margin-right: .5%;
+  margin-top: 2px;
+  color: white;
+  background-color: darkslategray;
+  min-height: 50px;
+  word-wrap: break-word;
+  overflow-y: hidden;
+}
+.chatMessageName {
+  width: 24.5%;
+  float: left;
+  margin-left: .5%;
+}
+.chatMessageText {
+  width: 74.5%;
+  float: right;
+  margin-left: .5%;
+}
